@@ -20,15 +20,16 @@
     --color-accent-d2: #7f6600;
     --color-accent-d3: #3f3300;
 
-    --color-text: #fff;
+    --color-text-base: #fff;
     --color-text-d1: #bfbfbf;
     --color-text-d2: #7f7f7f;
     --color-text-d3: #3f3f3f;
 }
 
 body {
+    background-color: var(--color-bg-base);
     background: linear-gradient(to bottom, var(--color-bg-base), var(--color-bg-d3));
     background-repeat: no-repeat;
 
-    color: var(--color-white);
+    color: var(--color-text-base);
 }
