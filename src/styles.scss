@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap'); // Logo font
+
+// Global SCSS
+
+:root {
+    --color-bg-l3: #c7c7c7;
+    --color-bg-l2: #909090;
+    --color-bg-l1: #595959;
+    --color-bg-base: #222222;
+    --color-bg-d1: #191919;
+    --color-bg-d2: #111111;
+    --color-bg-d3: #080808;
+
+    --color-accent-l3: #fff2bf;
+    --color-accent-l2: #ffe67f;
+    --color-accent-l1: #ffd93f;
+    --color-accent-base: #ffcd00;
+    --color-accent-d1: #bf9900;
+    --color-accent-d2: #7f6600;
+    --color-accent-d3: #3f3300;
+
+    --color-white: #fff;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--color-bg-base), var(--color-bg-d3));
+    background-repeat: no-repeat;
+
+    color: var(--color-white);
+}
