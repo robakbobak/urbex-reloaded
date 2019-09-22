@@ -16,14 +16,18 @@ mdb-carousel {
     background: linear-gradient(to bottom, var(--color-black), transparent);
 
     .logo {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
 
-		width: 100%;
+        width: 100%;
 
         text-align: center;
-		font-family: "Major Mono Display", Arial, Helvetica, sans-serif;
+        font-family: "Major Mono Display", Arial, Helvetica, sans-serif;
+
+        h1 {
+            font-size: 72px;
+        }
 
         .split-text {
             display: flex;
