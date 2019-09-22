@@ -2,7 +2,8 @@ mdb-carousel {
     mdb-carousel-item {
         height: 100vh;
         background-size: cover;
-        background-repeat: no-repeat;
+		background-repeat: no-repeat;
+		background-position: center center;
     }
 }
 
@@ -26,17 +27,37 @@ mdb-carousel {
         font-family: "Major Mono Display", Arial, Helvetica, sans-serif;
 
         h1 {
-            font-size: 72px;
+            font-size: 100px;
+        }
+
+        .spacer {
+			display: block;
+			
+			width: 428px;
+
+			margin-left: 50%;
+			transform: translateX(-50%);
+			border-bottom: 2px solid var(--color-white);
+			
+			transition: all 0.5s ease;
         }
 
         .split-text {
-            display: flex;
-            justify-content: center;
+            h1 {
+                display: flex;
+                justify-content: center;
+                word-break: break-all;
+            }
 
             &:hover {
                 .hidden {
                     opacity: 1;
                     max-width: 1em;
+                }
+
+                .spacer {
+					opacity: 1;
+                    width: 50vw;
                 }
             }
 

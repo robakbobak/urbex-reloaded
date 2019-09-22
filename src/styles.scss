@@ -29,6 +29,10 @@
     --filter-brightness-low: brightness(0.8);
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     background-color: var(--color-bg-base);
     background: linear-gradient(to bottom, var(--color-bg-base), var(--color-bg-d3));
