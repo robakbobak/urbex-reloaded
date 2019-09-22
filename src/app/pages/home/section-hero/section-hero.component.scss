@@ -8,21 +8,39 @@ mdb-carousel {
 
 .carousel-overlay {
     position: absolute;
-    top:0;
-    left:0;
-    width: 100vw;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100vh;
 
     background: linear-gradient(to bottom, var(--color-black), transparent);
 
     .logo {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		width: 100%;
+
         text-align: center;
-        font-family: 'Major Mono Display', Arial, Helvetica, sans-serif;
+		font-family: "Major Mono Display", Arial, Helvetica, sans-serif;
 
-        margin-top: 25vh;
+        .split-text {
+            display: flex;
+            justify-content: center;
 
-        h1 {
-            width: 100vw;
+            &:hover {
+                .hidden {
+                    opacity: 1;
+                    max-width: 1em;
+                }
+            }
+
+            .hidden {
+                max-width: 0;
+                opacity: 0;
+                transition: all 0.5s ease;
+            }
         }
     }
 }
