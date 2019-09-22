@@ -1,0 +1,28 @@
+mdb-carousel {
+    mdb-carousel-item {
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.carousel-overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(to bottom, var(--color-black), transparent);
+
+    .logo {
+        text-align: center;
+        font-family: 'Major Mono Display', Arial, Helvetica, sans-serif;
+
+        margin-top: 25vh;
+
+        h1 {
+            width: 100vw;
+        }
+    }
+}
